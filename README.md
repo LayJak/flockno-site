@@ -1,10 +1,11 @@
-# FlockNo public site — v6
+# FlockNo public site — v7
 
 Upload every file in this folder directly to the root of the public `flockno-site` repository.
 
 This version:
-- uses `flockno-logo.png` as the standalone header/fav icon
-- places the dark logo inside a subtle light tile so it reads correctly on the dark site
-- uses `product-hero.png` as the primary large product screenshot
-- keeps both detailed product screenshots in the lower showcase section
-- contains no extension source, backend source, API credentials, private email address, or development secrets
+- uses the supplied Annapolis property/privacy screenshot as the top hero image
+- makes the hero substantially larger on desktop so the product UI is readable
+- keeps the lower product showcase images unchanged
+- keeps the standalone FlockNo header logo treatment from v6
+
+The public site contains no extension source, backend source, API credentials, private email address, or development secrets.
