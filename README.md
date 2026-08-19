@@ -1,19 +1,18 @@
 # FlockNo public site
 
-Public-facing FlockNo product, privacy, and Chrome permission-disclosure site for GitHub Pages.
+This version intentionally keeps every deployable file at the repository root
+so GitHub Pages does not depend on nested asset-folder paths.
 
-Upload the **contents of this folder** to the root of the public `flockno-site` repository. GitHub Pages will redeploy automatically if it is already configured.
+Upload every file in this folder directly to the root of `flockno-site`.
 
-## Approved brand assets
+Expected repository root:
 
-- `assets/icon-source.png` — approved 128×128 transparent FlockNo icon
-- `assets/flockno-lockup.png` — display-optimized crop of the approved horizontal lockup
-- `assets/flockno-lockup-original.png` — untouched original horizontal lockup upload
+- .nojekyll
+- README.md
+- index.html
+- privacy.html
+- styles.css
+- flockno-lockup.png
+- icon-source.png
 
-## Site files
-
-- `index.html` — public product site
-- `privacy.html` — privacy policy and Chrome permission explanations
-- `styles.css` — responsive site styling
-
-This public repository intentionally contains no extension source, backend source, API credentials, private email address, or development secrets.
+GitHub Pages should already be configured to deploy from `main` / root.
