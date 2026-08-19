@@ -59,3 +59,105 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
     max-width:165px !important;
   }
 }
+
+/* v5 dark-site brand treatment */
+.brand-wordmark{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--text);
+}
+.brand-wordmark img{
+  width:36px !important;
+  height:36px !important;
+  object-fit:contain !important;
+  display:block;
+  border-radius:0 !important;
+  background:transparent !important;
+}
+.brand-copy{
+  display:flex;
+  flex-direction:column;
+  line-height:1;
+  gap:4px;
+}
+.brand-copy strong{
+  font-size:1rem;
+  letter-spacing:.06em;
+  color:#f4f1fb;
+}
+.brand-copy small{
+  font-size:.48rem;
+  letter-spacing:.18em;
+  color:var(--muted);
+  white-space:nowrap;
+}
+
+.hero-product{
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:26px;
+  overflow:hidden;
+  background:#111019;
+  box-shadow:0 26px 70px rgba(0,0,0,.28);
+}
+.hero-product::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);
+  border-radius:inherit;
+}
+.hero-product img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:cover;
+}
+
+.showcase-section{
+  overflow:hidden;
+}
+.showcase-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-top:34px;
+}
+.product-shot{
+  margin:0;
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  background:rgba(255,255,255,.025);
+}
+.product-shot img{
+  display:block;
+  width:100%;
+  height:auto;
+  background:#fff;
+}
+.product-shot figcaption{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  padding:18px 20px 20px;
+}
+.product-shot figcaption strong{
+  font-size:1rem;
+}
+.product-shot figcaption span{
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.5;
+}
+
+@media(max-width:900px){
+  .showcase-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .brand-copy small{display:none}
+  .brand-wordmark img{width:32px !important;height:32px !important}
+}
